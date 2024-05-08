@@ -9,22 +9,27 @@
 </head>
 <body>
     <header>
-        <img src="./styles/images/2.png" width="150" style="background-color: red;" alt="logoXYZ">
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="./styles/images/2.png" width="75px" alt="logoXYZ"> 
+                <label class="logo-txt"> CURSOS XYZ</label>       
+            </div>
+        
         <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
         <dotlottie-player src="https://lottie.host/22d38f73-cd06-47f3-90e2-5d13339beb7e/bLrRv4fwSp.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
          -->
-         <h1><a href="#">CURSOS XYZ</a></h1>
-         <input type="checkbox" id="menu-check">
-         <label id="menu" for="menu-check">
-             <span id="menu-abrir">&#9776;</span>
-             <span id="menu-cerrar">X</span>
-         </label>
-         <nav>
-            <ul>
-                <li><a href="#" class="button border" >Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Store</a></li>
+         
+            <input type="checkbox" id="menu-check">
+            <label id="menu-toggle" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+         
+            <ul class="nav-list">
+                <li><a class="active" href="#" class="button border" >Home</a></li>
+                <li><a class="active" href="#">Shop</a></li>
+                <li><a class="active" href="#">Contact</a></li>
+                <li><a class="active" href="#">Store</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +38,7 @@
             <!-- Sector de banner  -->
             <div id="landing-text">
                 <div id="landing-text-inner">
-                    <h1>CUSROS OFICIOS XYZ</h1>
+                    <h1>CURSOS OFICIOS XYZ</h1>
                 </div>
             </div>
 
@@ -50,7 +55,7 @@
         </section>
 
         <section class="wrapper-grid-profile">
-            <!-- Sector de comentarios -->
+             
             <article class="container-profile">
                 <div class="banner-img-profile"></div>
                 <img src="./styles/images/jeffery-erhunse-vp9mRauo68c-unsplash.jpg" alt="imagen de perfil" class="img-profile">
