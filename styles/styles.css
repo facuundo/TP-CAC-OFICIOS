@@ -4,6 +4,7 @@
 	--clr-gray-light:#ABA9BB;
 	--clr-green-primary: #238F8F;
 	--clr-green-light: #D6F4F3;
+	--clr-blue-primary: #000548;
 
 }
 *{
@@ -99,7 +100,51 @@ nav {
 #menu-check:checked ~ .nav-list li {
 	opacity: 1;
 }
-/*Sector Comentarios*/
+/* Sector banner */
+.parallax-completo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bannerPrincipal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.parallax-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(171,169,187,0.5);   /*rgba de var(--clr-gray-light:)*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.parallax-content {
+	
+    display: inline;
+    padding: 18px;
+    width: 320px;
+    text-align: center;
+    color: var(--clr-blue-primary);
+}
+
+.parallax-content h2 {
+	font-size: 3.5em;
+	font-weight: bolder;
+
+}
+.parallax-content p {
+	font-weight: bold;
+}
+/* Sector Comentarios */
 .wrapper-grid-profile {
 	display: grid;
 	grid-template-columns:minmax(300px, 1fr);
@@ -190,6 +235,15 @@ nav {
 		color: var(--clr-gray-light);
 	}
 
+	.parallax-content {
+		width: 60%;
+	}
+	.parallax-content h2 {
+		font-size: 5.5em;
+	}
+	.parallax-content p {
+		font-size: 2em;
+	}
 	.wrapper-grid-profile{
 		grid-template-columns: repeat(2, 1fr);
 	}
