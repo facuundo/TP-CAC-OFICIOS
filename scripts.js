@@ -16,11 +16,21 @@ function validarFormulario() {
     let fechaNacimiento = document.getElementsByName("fecha_nacimiento")[0].value;
     let email = document.getElementsByName("Email")[0].value;
     let telefono = document.getElementsByName("Telefono")[0].value;
-    let genero = document.querySelector('input[name="genero"]:checked');
-    let oficio = document.querySelector('input[name="Oficio"]:checked');
-    let firma = document.getElementById("Signature").value;
-    let fechaAuth = document.getElementById("DateAuth").value;
+   
 
+    let genero = document.querySelector('input[name="genero"]:checked');
+  
+    let oficio = document.querySelector('input[name="Oficio"]:checked');
+    
+    let firma = document.getElementsByName("Signature")[0].value;
+   
+
+
+    let fechaAuth = document.getElementsByName("DateAuth")[0].value;
+   
+
+   
+   
     // Validar que los campos no estén vacíos
     if (nombre === "" || apellido === "" || direccion === "" || provincia === "" || zipCode === "" ||
         fechaNacimiento === "" || email === "" || telefono === "" || !genero || !oficio || firma === "" || fechaAuth === "") {

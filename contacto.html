@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos de Oficios | XYZ</title>
     <link rel="icon" href="./styles/images/_123034.ico" type="image/x-icon">
-    <script src="scripts.js"></script>
     <link rel="stylesheet" href="./styles/styles.css">
-
+    <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/a1b880f44d.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -38,14 +37,17 @@
     </header>
     <main>
         <section class="parallax-completo">
+            
+
             <div class="parallax-overlay"> 
                 <div class="parallax-content">
-                    <h2>INSTITUTO XYZ</h2> <!-- Encabezado agregado -->
+                    <h2>INSTITUTO XYZ</h2>
                     <br>
                     <p>"Abraza tus errores. Te hacen ser quien eres". Beyoncé</p>
                     <!--<button>Más información</button> -->
                 </div>
             </div>   
+            
         </section>
         <section class="formulario">
             <h2>Formulario de registro</h2> <!-- Agregamos un encabezado -->
@@ -139,7 +141,7 @@
                         <div>
                             <p>Oficio:</p>
                             <div class="radio-button">
-                                <label>Computación<input id="Oficio" name="Oficio" type="radio" value="Computacion"></label>
+                                <label>Computación<input name="Oficio" type="radio" value="Computacion"></label>
                                 <label>Redes<input name="Oficio" type="radio" value="Redes"></label>
                                 <label>Reparación de PC<input name="Oficio" type="radio" value="RepPc"></label>
                                 <label>Administración<input name="Oficio" type="radio" value="Administracion"></label>
@@ -159,13 +161,13 @@
                         <div class="single_text">
                             <p>
                                 <label>Firma:</label>
-                                <input type="text" id="Signature" maxLength="30">
+                                <input type="text" name="Signature" maxLength="30">
                             </p>
                         </div>
                         <div class="date">
                             <p>
                                 <label>Fecha:</label>
-                                <input type="date" id="DateAuth">
+                                <input type="date" name="DateAuth">
                             </p>
                         </div>
                     </fieldset>
@@ -174,6 +176,17 @@
                 </form>
             </div>
         </section>
+        <div class="carrusel">
+            <figure>
+                <img src="./styles/images/oficios1.jpg" alt="Aprendiendo un oficio" class="polaroid RotarIzq">
+            </figure>
+            <figure>
+                <img src="./styles/images/oficios2.jpg" alt="Trabajando en equipo" class="polaroid">
+            </figure>
+            <figure>
+                <img src="./styles/images/oficios3.jpg" alt="Desarrollando habilidades" class="polaroid RotarDer">
+            </figure>
+        </div>
     </main>
     <footer class="footer">
         <div class="container-footer">
