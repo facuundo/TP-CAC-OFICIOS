@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Oficios | XYZ</title>
+    <link rel="icon" href="./styles/images/_123034.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/a1b880f44d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="./styles/images/logoXYZv2.png" height="90" alt="logoXYZ"> 
+                <a href="./index.html"><span class="logo-txt"> INSTITUTO XYZ</span></a>       
+            </div>         
+            <input type="checkbox" id="menu-check">
+            <label id="menu-toggle" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+            <ul class="nav-list">
+                <li><a  href="./index.html" class="button-border" ><i class="fa-solid fa-graduation-cap"></i>  Cursos </a></li>
+                <li><a  href="./contacto.html" class="button-border" ><i class="fa-solid fa-envelope"></i>  Contacto</a></li>
+                <li><a  href="./historia.html" class="button-border" ><i class="fa-solid fa-scroll"></i>  Historia</a></li>
+                <li><a  href="./faq.html" class="button-border" ><i class="fa-solid fa-circle-question"></i>  Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="parallax-completo">
+            <div class="parallax-overlay"> 
+                <div class="parallax-content">
+                    <h1>INSTITUTO XYZ</h1> <!-- Encabezado agregado -->
+                    <br>
+                    <p>"Abraza tus errores. Te hacen ser quien eres". Beyoncé</p>
+                    <!--<button>Más información</button> -->
+                </div>
+            </div>   
+        </section>
+        
+        <section class="formulario">
+            <h2>Formulario de registro</h2> <!-- Agregamos un encabezado -->
+           
+                <div class="formulario">
+                    <form name="contactForm" action="./show_data.html" onsubmit="return validarFormulario()">
+                        <fieldset>
+                            <legend>Formulario de Contacto</legend>
+                            <div class="Personal_info">
+                                <div class="single_text">
+                                    <p>
+                                        <label>Nombre</label>
+                                        <input type="text" name="Nombre" maxLength="30" required>
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Apellido</label>
+                                        <input type="text" name="Apellido" maxLength="30" required>
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Dirección</label>
+                                        <input type="text" name="Street_Address" maxLength="100" required class="inputlargo">
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Provincia</label>
+                                        <select class="drown_list" name="Provincia" required>
+                                            <option value="" disabled selected>Selecciona una Provincia</option>
+                                            <option value="Buenos Aires">Buenos Aires</option>
+                                            <option value="Catamarca">Catamarca</option>
+                                            <option value="Chaco">Chaco</option>
+                                            <option value="Chubut">Chubut</option>
+                                            <option value="Córdoba">Córdoba</option>
+                                            <option value="Corrientes">Corrientes</option>
+                                            <option value="Entre Ríos">Entre Ríos</option>
+                                            <option value="Formosa">Formosa</option>
+                                            <option value="Jujuy">Jujuy</option>
+                                            <option value="La Pampa">La Pampa</option>
+                                            <option value="La Rioja">La Rioja</option>
+                                            <option value="Mendoza">Mendoza</option>
+                                            <option value="Misiones">Misiones</option>
+                                            <option value="Neuquén">Neuquén</option>
+                                            <option value="Río Negro">Río Negro</option>
+                                            <option value="Salta">Salta</option>
+                                            <option value="San Juan">San Juan</option>
+                                            <option value="San Luis">San Luis</option>
+                                            <option value="Santa Cruz">Santa Cruz</option>
+                                            <option value="Santa Fe">Santa Fe</option>
+                                            <option value="Santiago del Estero">Santiago del Estero</option>
+                                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                            <option value="Tucumán">Tucumán</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Código Postal</label>
+                                        <input type="number" name="ZipCode" min="1" max="9999" required>
+                                    </p>
+                                </div>
+                                <div class="date">
+                                    <p>
+                                        <label>Fecha de Nacimiento</label>
+                                        <input type="date" name="fecha_nacimiento" min="1920-01-01" max="2018-01-01" required>
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Email</label>
+                                        <img src="styles/images/email-icon.png" class="icon" alt="Email Icon">
+                                        <input type="email" name="Email" required>
+                                    </p>
+                                </div>
+                                <div class="single_text">
+                                    <p>
+                                        <label>Teléfono</label>
+                                        <img src="styles/images/phone-icon.png" class="icon" alt="Phone Icon">
+                                        <input type="tel" name="Telefono" required>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Género:</p>
+                                    <label>Femenino<input name="genero" type="radio" value="F" required></label>
+                                    <label>Masculino<input name="genero" type="radio" value="M"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Oficio:</p>
+                                <div class="radio-button">
+                                    <label>Computacion<input name="Oficio" type="radio" value="Computacion" required></label>
+                                    <label>Redes<input name="Oficio" type="radio" value="Redes"></label>
+                                    <label>Reparacion de PC<input name="Oficio" type="radio" value="RepPc"></label>
+                                    <label>Administracion<input name="Oficio" type="radio" value="Administracion"></label>
+                                    <label>Arduino<input name="Oficio" type="radio" value="Arduino"></label>
+                                </div>
+                              
+                            </div>
+                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>Permiso para Trabajar</legend>
+                            <div class="permision">
+                                <p>
+                                    Yo, el padre o tutor del menor registrado, acepto que el registrante y yo cumpliremos con todas las normas 
+                                    del Programa de Oficios. En reconocimiento de la posibilidad de lesiones físicas asociadas con los oficios y 
+                                    en consideración por aceptar al registrante en sus programas y actividades, libero y eximo de responsabilidad 
+                                    al programa y sus empleados, así como al personal y voluntarios asociados, incluyendo las instalaciones usadas 
+                                    para prácticas y trabajos, contra cualquier reclamo presentado por o en nombre del registrante como resultado 
+                                    de su participación en el programa.
+                                </p>
+                            </div>
+                            <div class="single_text">
+                                <p>
+                                    <label>Firma del Padre/Tutor:</label>
+                                    <input type="text" name="Signature" maxLength="30" required>
+                                </p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    <label>Fecha:</label>
+                                    <input type="date" name="DateAuth" required>
+                                </p>
+                            </div>
+                        </fieldset>
+                        <input type="reset" class="resetear" value="Restablecer">
+                        <button class="send" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="carrusel">
+                    <figure>
+                        <img src="./assets/images/hockey_1.jpg" alt="Play_hockey" height="200" class="polaroid RotarIzq">
+                    </figure>
+                    <figure>
+                        <img src="./assets/images/hockey_2.jpg" alt="Play_hockey" height="200" class="polaroid">
+                    </figure>
+                    <figure>
+                        <img src="./assets/images/hockey_3.jpg" alt="Play_hockey" height="200" class="polaroid RotarDer">
+                    </figure>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Instituto XYZ</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestro servicios</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Centro de enseñanza</a></li>
+                        <li><a href="#">Socios</a></li>
+                        <li><a href="#">Cursos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="#" class="tooltip"><i class="fa-brands fa-facebook-f"></i><span class="tooltip-text">Siguenos</span></a>
+                        <a href="#" class="tooltip"><i class="fa-brands fa-x-twitter"></i><span class="tooltip-text">Siguenos</span></a>
+                        <a href="#" class="tooltip"><i class="fa-brands fa-instagram"></i><span class="tooltip-text">Siguenos</span></a>
+                        <a href="#" class="tooltip"><i class="fa-brands fa-linkedin-in"></i><span class="tooltip-text">Siguenos</span></a>
+                    </div>
+                    
+                </div>
+                <p>&copy; 2024 - INSTITUTO XYZ - Grupo 5 - Codo a Codo - Todos los derechos reservados.</p>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
