@@ -307,7 +307,10 @@ nav {
     background-color: var(--clr-gray);
     padding: 1rem;
 }
-
+.button-border {
+  padding-right: 15px;
+  
+}
 /* Sector Comentarios */
 .wrapper-grid-profile {
     display: grid;
