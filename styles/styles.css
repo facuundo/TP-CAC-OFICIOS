@@ -446,6 +446,7 @@ li {
 }
 .social-link {
     padding: 0px 0px 0px 60px;
+    
 }
 .social-link a {
 	display: inline-block;
@@ -462,7 +463,32 @@ li {
 .social-link a:hover {
 	background: var(--clr-green-primary);
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: var(--clr-gray);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Cambia la posición a 'top' para que el tooltip aparezca debajo */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 0.8;
+}
 /*Página faq*/
 .container-questions h2{
     margin-bottom: 15px; 
@@ -619,12 +645,12 @@ li {
 		display: contents;
 	}
 	.nav-list li a {
-		font-size: 1em;
+		font-size: 0.9em;
 		font-weight: bolder;
 	}
 
 	.nav-list li a.active, .nav-list li a:hover {
-		color: var(--clr-gray-light);
+		color: var(--clr-green-primary);
 	}
 
 	.parallax-content {
@@ -651,6 +677,12 @@ li {
 	
     .social-link {
         padding: 0px 0px 0px 60px;
+    }
+    .tooltip .tooltip-text {
+        background-color: var(--clr-blue-primary);
+    }
+    .tooltip:hover .tooltip-text {
+        opacity: 0.5;
     }
     .containerH {
         flex-wrap: wrap;
@@ -694,7 +726,7 @@ li {
 		}
 		.logo-txt {
 			width: 8em;
-			font-size: 1.7em;
+			font-size: 1.4em;
 			line-height: 36px;
 		}
 		
@@ -725,8 +757,14 @@ li {
 			transition: none;
 		}
 		.nav-list li a.active, .nav-list li a:hover {
-			color: var(--clr-gray-light);
+			color: var(--clr-green-primary);
 		}
+        .nav-list li i{
+            font-size: 1.2em;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
         .parallax-content {
             width: 90%; /* Ajustar el ancho del contenido del parallax */
         }
