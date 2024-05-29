@@ -72,7 +72,7 @@ nav {
 
 .nav-list li a {
     color: var(--clr-gray-light);
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform: uppercase;
 }
 
